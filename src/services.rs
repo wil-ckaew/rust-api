@@ -357,7 +357,7 @@ async fn update_document_by_id(
     .await;
 
     match document_result {
-        Ok(document) => {
+        Ok(_document) => {
             // Atualizar o documento
             let update_result = sqlx::query_as!(
                 DocumentModel,
